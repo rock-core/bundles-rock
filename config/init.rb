@@ -1,4 +1,5 @@
 Roby.app.using 'syskit'
+Roby.app.auto_load_models = false
 
 require 'roby/schedulers/temporal'
 Roby.scheduler = Roby::Schedulers::Temporal.new

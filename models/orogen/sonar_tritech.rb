@@ -1,4 +1,5 @@
 using_task_library "sonar_tritech"
+require "models/blueprints/sensors"
 
 
 module Dev

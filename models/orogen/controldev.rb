@@ -6,25 +6,20 @@ module Dev
     module Controldev
 
         Base::ControlLoop.declare 'RawCommand', 'controldev/RawCommand'
-#        Base::ControlLoop.declare 'Motion2D', '/base/MotionCommand2D'
 
         device_type 'Joystick' do
-            provides Base::Motion2DControllerSrv
-        end 
-
-        device_type 'Raw' do 
             provides Base::RawCommandControllerSrv
         end
 
         device_type 'Mouse3D' do
             provides Base::RawCommandControllerSrv
         end
+
     end
 end
 
 class Controldev::JoystickTask
-    driver_for Dev::Controldev::Raw, :as => 'raw'
-    driver_for Dev::Controldev::Joystick, :as => 'motion_2d'
+    driver_for Dev::Controldev::Joystick, :as => 'joystick'
 end
 
 class Controldev::Mouse3DTask
@@ -33,7 +28,6 @@ end
 
 class Controldev::Remote
     provides Dev::Bus::CAN::ClientInSrv, "from_bus" => "canInputDevice" ,:as => "can"
-
-    driver_for Dev::Controldev::Raw, :as => 'joystick'
+    driver_for Dev::Controldev::Joystick, :as => 'joystick'
 end
 

@@ -46,7 +46,7 @@ module Base
 
     # Provider of a frame transformation
     data_service_type 'TransformationSrv' do
-        provides PoseSrv
+        output_port 'transformation', '/base/samples/RigidBodyState'
     end
 
     # Represents estimators that provide a pose that is a best estimate of the

@@ -7,7 +7,7 @@ end
 class Dynamixel::Task
     driver_for Dev::Actuators::Dynamixel, :as => 'driver'
     provides Base::TransformationSrv, :as => 'transform',
-	'pose_samples' => 'lowerDynamixel2UpperDynamixel'
+	'transformation' => 'lowerDynamixel2UpperDynamixel'
 
     # Add some more information for the transformer configuration
     transformer do
