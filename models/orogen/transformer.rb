@@ -1,4 +1,4 @@
-class Transformer::Task
+class OroGen::Transformer::Task
     attr_reader :last_update
 
     poll do

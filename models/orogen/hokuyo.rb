@@ -1,7 +1,7 @@
 require 'models/blueprints/devices'
 require 'models/blueprints/timestamping'
 
-class Hokuyo::Task
+class OroGen::Hokuyo::Task
     driver_for Dev::Sensors::Hokuyo, :as => 'driver'
     provides Base::TimestampInputSrv, :as => 'timestamps'
     provides Base::LaserRangeFinderSrv, :as => 'scanner'

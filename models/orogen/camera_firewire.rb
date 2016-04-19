@@ -1,7 +1,7 @@
 require 'models/blueprints/devices'
 require 'models/blueprints/timestamping'
 
-class CameraFirewire::CameraTask
+class OroGen::CameraFirewire::CameraTask
     driver_for Dev::Sensors::Cameras::Firewire, :as => 'driver'
     provides Base::TimestampInputSrv, :as => 'timestamps'
     

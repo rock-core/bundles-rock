@@ -18,15 +18,15 @@ module Dev
     end
 end
 
-class Controldev::JoystickTask
+class OroGen::Controldev::JoystickTask
     driver_for Dev::Controldev::Joystick, :as => 'joystick'
 end
 
-class Controldev::Mouse3DTask
+class OroGen::Controldev::Mouse3DTask
     driver_for Dev::Controldev::Mouse3D, :as => 'mouse3d'
 end
 
-class Controldev::Remote
+class OroGen::Controldev::Remote
     provides Dev::Bus::CAN::ClientInSrv, "from_bus" => "canInputDevice" ,:as => "can"
     driver_for Dev::Controldev::Joystick, :as => 'joystick'
 end

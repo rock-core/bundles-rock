@@ -1,7 +1,7 @@
 require 'models/blueprints/timestamping'
 require 'models/blueprints/devices'
 
-class XsensImu::Task
+class OroGen::XsensImu::Task
     # Additional information to allow for the transformer's automatic
     # configuration
     transformer do

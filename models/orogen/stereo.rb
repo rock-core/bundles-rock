@@ -1,4 +1,4 @@
-class Stereo::Task
+class OroGen::Stereo::Task
     # Additional information to allow for the transformer's automatic
     # configuration
     transformer do

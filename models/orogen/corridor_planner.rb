@@ -4,7 +4,7 @@
 #  * either directly, as a task argument
 #  * or by reading it from its planned task (if the task is used as a planning
 #    task)
-class CorridorPlanner::Task
+class OroGen::CorridorPlanner::Task
     argument :start_point, :default => from(:planned_task).start_point.of_type(Eigen::Vector3)
     argument :target_point, :default => from(:planned_task).target_point.of_type(Eigen::Vector3)
 

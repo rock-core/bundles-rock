@@ -1,12 +1,12 @@
-class Taskmon::Task
+class OroGen::Taskmon::Task
     attr_reader :query_tasks
     attr_reader :query_deployments
 
     def initialize(options = Hash.new)
         super
 
-        @watched_deployments = ValueSet.new
-        @watched_tasks = ValueSet.new
+        @watched_deployments = Set.new
+        @watched_tasks = Set.new
     end
 
     on :start do |event|

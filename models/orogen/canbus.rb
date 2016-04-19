@@ -15,7 +15,7 @@ Dev::Bus.com_bus_type 'CAN', :message_type => '/canbus/Message' do
     end
 end
 
-class Canbus::Task
+class OroGen::Canbus::Task
     driver_for Dev::Bus::CAN, :as => 'driver'
 
     # This declares that all devices attached to this bus should use the 'in'

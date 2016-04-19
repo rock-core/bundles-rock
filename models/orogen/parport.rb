@@ -11,7 +11,7 @@ Dev::Bus.com_bus_type 'Parport' do
     end
 end
 
-class Parport::Task
+class OroGen::Parport::Task
     driver_for Dev::Bus::Parport, :as => 'driver'
 
     def configure

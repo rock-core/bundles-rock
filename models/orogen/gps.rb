@@ -3,7 +3,7 @@ Dev::Sensors.device_type 'MB500' do
     provides Dev::Sensors::GPS
 end
 
-class Gps::BaseTask
+class OroGen::Gps::BaseTask
     def configure
         super
 
@@ -13,10 +13,10 @@ class Gps::BaseTask
     end
 end
 
-class Gps::MB500Task
+class OroGen::Gps::MB500Task
     driver_for Dev::Sensors::MB500, :as => 'driver'
 end
 
-class Gps::GPSDTask
+class OroGen::Gps::GPSDTask
     driver_for Dev::Sensors::GPS, :as => 'driver'
 end

@@ -1,7 +1,7 @@
 require 'models/blueprints/control'
 using_task_library 'joint_dispatcher'
 
-module JointDispatcher
+module OroGen::JointDispatcher
     # Representation of a single dispatch in {Task}
     data_service_type 'DispatchedStatusSrv' do
         input_port 'status_in', '/base/samples/Joints'

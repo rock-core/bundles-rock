@@ -5,7 +5,7 @@ module Base
     end
 end
 
-class IodriversBase::Task
+class OroGen::IodriversBase::Task
     provides Base::RawIODeviceSrv, :as => 'raw_io',
         'raw_out' => 'io_raw_out',
         'raw_in' => 'io_raw_in'

@@ -1,6 +1,6 @@
 require 'rock/blueprints/pose'
 
-class Icp::Task
+class OroGen::Icp::Task
     find_output_port('pose_samples').
         triggered_once_per_update
     worstcase_processing_time 1
@@ -18,7 +18,7 @@ class Icp::Task
     end
 end
 
-class Icp::Relocalization < Syskit::Composition
+class OroGen::Icp::Relocalization < Syskit::Composition
     add Srv::RelativePose, :as => 'relative_pose'
     add Srv::LaserRangeFinder, :as => 'laser_range_finder'
 

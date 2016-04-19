@@ -1,7 +1,7 @@
 require 'models/blueprints/sensors'
 require 'models/blueprints/devices'
 
-class LaserFilter::Task
+class OroGen::LaserFilter::Task
     provides Base::LaserRangeFinderSrv, :as => 'filtered_scans'
 
     transformer do

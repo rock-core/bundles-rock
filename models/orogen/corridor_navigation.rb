@@ -1,4 +1,4 @@
-class CorridorNavigation::ServoingTask
+class OroGen::CorridorNavigation::ServoingTask
     argument :initial_heading, :default => nil
 
     # Data writer connected to the heading port of the corridor servoing task
@@ -19,7 +19,7 @@ class CorridorNavigation::ServoingTask
     end
 end
 
-class CorridorNavigation::FollowingTask
+class OroGen::CorridorNavigation::FollowingTask
     # Additional information for the transformer's automatic configuration
     transformer do
         transform_input "pose_samples", "body" => "world"

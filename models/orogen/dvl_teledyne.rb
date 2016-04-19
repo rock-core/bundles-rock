@@ -14,7 +14,7 @@ end
 
 
 
-class DvlTeledyne::Task
+class OroGen::DvlTeledyne::Task
     driver_for Dev::Sensors::Teledyne::Explorer, :as => 'driver', "distance" => "ground_distance", "velocity_samples" => "velocity_samples"
 end
 

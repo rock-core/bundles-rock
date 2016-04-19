@@ -23,7 +23,7 @@ require 'models/blueprints/planning'
 #
 # Moreover, if the Conf.reverse_trajectory flag is set, the trajectory follower
 # will follow the static trajectory in the reverse direction
-class TrajectoryFollower::Task
+class OroGen::TrajectoryFollower::Task
     provides Base::Motion2DControllerSrv, :as => 'controller'
 
     argument :trajectory, :default => nil

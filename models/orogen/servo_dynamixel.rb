@@ -1,5 +1,5 @@
 require 'models/blueprints/devices'
-class ServoDynamixel::Task
+class OroGen::ServoDynamixel::Task
     driver_for Dev::Actuators::Dynamixel, :as => 'driver'
 
     orogen_model.find_port('command').multiplexes

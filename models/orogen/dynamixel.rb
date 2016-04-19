@@ -4,7 +4,7 @@ module Dev
     end
 end
 
-class Dynamixel::Task
+class OroGen::Dynamixel::Task
     driver_for Dev::Actuators::Dynamixel, :as => 'driver'
     provides Base::TransformationSrv, :as => 'transform',
 	'transformation' => 'lowerDynamixel2UpperDynamixel'

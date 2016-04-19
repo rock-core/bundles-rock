@@ -11,6 +11,6 @@ module Dev
     end
 end
 
-class FogKvh::Dsp3000Task
+class OroGen::FogKvh::Dsp3000Task
   driver_for Dev::Sensors::KVH::DSP3000, :as => 'driver'
 end

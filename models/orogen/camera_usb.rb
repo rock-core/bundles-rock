@@ -1,6 +1,6 @@
 require 'models/blueprints/devices'
 
-class CameraUsb::Task
+class OroGen::CameraUsb::Task
     driver_for Dev::Sensors::Cameras::USB, :as => 'driver'
     
     def configure

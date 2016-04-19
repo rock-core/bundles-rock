@@ -23,7 +23,7 @@ module Dev::Mars
         device_type "ForceTorque6DOF"
 end
 
-module Mars
+module OroGen::Mars
     class SimulatedDevice < Syskit::Composition
         add Mars::Task, :as => "mars"
 

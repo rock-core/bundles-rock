@@ -27,7 +27,7 @@ module Dev::Simulation
     end
 end
 
-module Simulation
+module OroGen::Simulation
     DevMars = Dev::Simulation::Mars
     class SimulatedDevice < Syskit::Composition
         add Simulation::Mars, :as => "mars"

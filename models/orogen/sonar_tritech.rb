@@ -15,11 +15,11 @@ module Dev
     device_type "Profiling"
 end
 
-class SonarTritech::Micron
+class OroGen::SonarTritech::Micron
     driver_for Dev::Micron , :as => 'driver' 
 end
 
-class SonarTritech::Echosounder
+class OroGen::SonarTritech::Echosounder
     driver_for Dev::Echosounder , :as => 'driver'
 end
 

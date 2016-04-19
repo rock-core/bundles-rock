@@ -4,7 +4,7 @@ Dev::Sensors.device_type 'Stim300' do
     provides Base::CalibratedIMUSensorsSrv
 end
 
-class Stim300::Task
+class OroGen::Stim300::Task
     driver_for Dev::Sensors::Stim300, :as => 'driver'
 
     # Additional information to allow for the transformer's automatic

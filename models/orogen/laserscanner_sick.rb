@@ -3,7 +3,7 @@ Dev::Sensors.device_type 'SickLMS' do
     provides Base::LaserRangeFinderSrv
 end
 
-class LaserscannerSick::Task
+class OroGen::LaserscannerSick::Task
     driver_for Dev::Sensors::SickLMS, :as => 'device'
 
     transformer do

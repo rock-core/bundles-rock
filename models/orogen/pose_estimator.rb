@@ -1,4 +1,4 @@
-class PoseEstimator::Task
+class OroGen::PoseEstimator::Task
     argument :initial_pose, :default => nil
     provides Srv::Pose
 

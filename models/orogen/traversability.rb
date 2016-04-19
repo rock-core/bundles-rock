@@ -1,4 +1,4 @@
-class Traversability::Grassfire
+class OroGen::Traversability::Grassfire
     transformer do
         associate_frame_to_ports 'world', 'mls_map', 'traversability_map'
     end
