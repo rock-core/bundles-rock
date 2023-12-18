@@ -1,6 +1,6 @@
 # Bundle: rock
 
-* http://www.rock-robotics.org
+rock-robotics :: http://www.rock-robotics.org
 
 # DESCRIPTION
 
