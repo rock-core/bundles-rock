@@ -8,5 +8,6 @@
     <license>LGPL v2 or later</license>
 
     <depend package="drivers/orogen/transformer" />
+    <depend package="tools/syskit" />
 </package>
 
